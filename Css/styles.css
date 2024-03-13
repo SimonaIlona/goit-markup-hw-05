@@ -166,22 +166,35 @@
        padding: 0px, 0px, 32px, 0px;
        border: 1px;
 }
-.overlay{
-    display: flex;
-    justify-content: center;
-    top:57px;
-    height: 500px;
-    width:300px;
-    position: absolute;
-    background-color: var(--#4D5AE5);
-    opacity: 0.7;
-    transform: translateY(101%);
-    transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
-}
-
-.img-overlay{
+.img-overlay {
     position: relative;
     overflow: hidden;
+}
+
+.overlay {
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
+    width: 360px;
+    height: 300px;
+    background: url("../images/overlay.jpg");
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-overlay:hover .overlay {
+    transform: translateY(0px);
+    background-color: #4D5AE5;
+}
+
+.overlay-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    
 }
 
 
@@ -397,7 +410,7 @@
 }
 
 .container {
-    width: 1440px;
+    width: 1200px;
     margin: auto;
     display: flex;
     margin-top: 50px;
@@ -624,6 +637,7 @@
 
 .our-team-section {
     background: var(--cloud);
+
 }
 
 .card {
@@ -632,7 +646,13 @@
     background: var(--white);
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    width: Hug (264px);
+     height: Hug (428px);
+      top: 1900px;
+       left: 156px; 
+       padding: 0px, 0px, 32px, 0px;
+       border-radius: 0px, 0px, 4px, 4px;
+        gap: 32px;
 }
 
 .card-content {
